@@ -2,16 +2,15 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 
-
 / {
     keymap {
         compatible = "zmk,keymap";
 
         layer_0 {
             bindings = <
-&kp ESCAPE      &kp Q  &kp W  &kp E     &kp R      &kp T        &kp Y      &kp U           &kp I      &kp O       &kp P          &kp BACKSPACE
-&kp TAB         &kp A  &kp S  &kp D     &kp F      &kp G        &kp H      &kp J           &kp K      &kp L       &kp SEMICOLON  &kp SINGLE_QUOTE
-&kp LEFT_SHIFT  &kp Z  &kp X  &kp C     &kp V      &kp B        &kp N      &kp M           &kp MINUS  &kp PERIOD  &kp SLASH      &kp GREATER_THAN
+&kp ESCAPE      &kp Q  &kp W  &kp E     &kp R      &kp T        &kp Y      &kp U           &kp I      &kp O       &kp P             &kp BACKSPACE
+&kp TAB         &kp A  &kp S  &kp D     &kp F      &kp G        &kp H      &kp J           &kp K      &kp L       &kp SEMICOLON     &kp SINGLE_QUOTE
+&kp LEFT_SHIFT  &kp Z  &kp X  &kp C     &kp V      &kp B        &kp N      &kp M           &kp MINUS  &kp PERIOD  &kp GREATER_THAN  &kp SLASH
                               &kp LGUI  &kp LCTRL  &kp SPACE    &kp ENTER  &kp LEFT_BRACE  &tog 1
             >;
         };
