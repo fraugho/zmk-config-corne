@@ -2,30 +2,25 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 
-
-&mt {
-    tapping-term-ms = <3000>;
-};
-
 / {
     keymap {
         compatible = "zmk,keymap";
 
         layer_0 {
             bindings = <
-&kp ESCAPE      &mt NUMBER_1 Q  &mt NUMBER_2 W  &mt NUMBER_3 E    &mt NUMBER_4 R  &mt NUMBER_5 T    &mt NUMBER_6 Y  &mt NUMBER_7 U  &mt NUMBER_8 I  &mt NUMBER_9 O  &mt NUMBER_0 P    &kp BACKSPACE
-&kp TAB         &kp A           &kp S           &kp D             &kp F           &kp G             &kp H           &kp J           &kp K           &kp L           &kp SEMICOLON     &kp SINGLE_QUOTE
-&kp LEFT_SHIFT  &kp Z           &kp X           &kp C             &kp V           &kp B             &kp N           &kp M           &kp MINUS       &kp PERIOD      &kp GREATER_THAN  &kp SLASH
-                                                &kp LEFT_CONTROL  &kp LGUI        &kp SPACE         &kp ENTER       &kp LEFT_BRACE  &tog 1
+&kp ESCAPE      &kp Q  &kp W  &kp E             &kp R     &kp T        &kp Y      &kp U           &kp I      &kp O       &kp P             &kp BACKSPACE
+&kp TAB         &kp A  &kp S  &kp D             &kp F     &kp G        &kp H      &kp J           &kp K      &kp L       &kp SEMICOLON     &kp SINGLE_QUOTE
+&kp LEFT_SHIFT  &kp Z  &kp X  &kp C             &kp V     &kp B        &kp N      &kp M           &kp MINUS  &kp PERIOD  &kp GREATER_THAN  &kp SLASH
+                              &kp LEFT_CONTROL  &kp LGUI  &kp SPACE    &kp ENTER  &kp LEFT_BRACE  &tog 1
             >;
         };
 
         layer_1 {
             bindings = <
-&trans          &kp NUMBER_1    &kp NUMBER_2    &kp NUMBER_3    &kp NUMBER_4  &kp N5       &kp NUMBER_6  &kp N7    &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0  &trans
-&trans          &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW    &kp RIGHT     &kp COMMA    &trans        &kp PIPE  &trans        &trans        &trans        &trans
-&kp LEFT_SHIFT  &trans          &trans          &trans          &trans        &trans       &trans        &trans    &trans        &trans        &trans        &trans
-                                                &kp LEFT_SHIFT  &kp LGUI      &kp SPACE    &kp RETURN    &kp RGUI  &tog 1
+&kp ESCAPE      &kp NUMBER_1    &kp NUMBER_2    &kp NUMBER_3    &kp NUMBER_4  &kp N5       &kp NUMBER_6     &kp N7    &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0  &kp BACKSPACE
+&kp TAB         &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW    &kp RIGHT     &kp COMMA    &kp TILDE        &kp PIPE  &trans        &trans        &trans        &kp F8
+&kp LEFT_SHIFT  &trans          &trans          &trans          &trans        &trans       &kp PRINTSCREEN  &trans    &trans        &trans        &trans        &kp F7
+                                                &kp LEFT_SHIFT  &kp LGUI      &kp SPACE    &kp RETURN       &kp RGUI  &tog 1
             >;
         };
     };
